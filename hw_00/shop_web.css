@@ -1,0 +1,52 @@
+li.menu {
+    color: white;
+    background-color: rgb(201, 197, 175);
+    display: inline-block;
+    width: 20%;
+}
+
+li.menu:hover {
+    background-color: rgb(255, 145, 0);
+}
+
+h1, h2, h3 {
+    background-color: red;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+tr:hover {
+    background-color: lightsalmon;
+}
+
+div.top {
+    text-align: center;
+}
+
+div.mid:hover {
+    background-color: orange;
+}
+
+div.bottom:hover {
+    background-color: chocolate;
+}
+
+span {
+    color: grey;
+}
+
+h3#support {
+    color: saddlebrown;
+}
+
+a {
+    color: brown;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
