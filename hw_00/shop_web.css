@@ -6,7 +6,7 @@ li.menu {
 }
 
 li.menu:hover {
-    background-color: rgb(240, 155, 218);
+    background-color: rgb(235, 191, 223);
 }
 
 h1, h2, h3 {
@@ -26,7 +26,7 @@ div.top {
 }
 
 div.mid:hover {
-    border: gray -50px;;
+    border-color: rgba(249, 250, 251, var(--tw-border-opacity));
 }
 
 div.bottom:hover {
