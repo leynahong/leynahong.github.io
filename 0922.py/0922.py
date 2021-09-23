@@ -89,3 +89,4 @@ def filter_odd(xs):
             accumulator.append(x)
         # append to the accumulator if our condition is satisfied
     return accumulator 
+    # always avoid actually removing something
