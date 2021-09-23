@@ -139,3 +139,21 @@ def lowest_grade(d):
         if d[k] < lowest:
             lowest = d[k]
     return lowest
+
+def student_with_lowest_grade(d):
+    '''
+    Return the key that has the greatest value.
+    >>> student_with_lowest_grade(math_grades)
+    'shelton cooper'
+    >>> student_with_lowest_grade(english_grades)
+    'douglas adams'
+    >>> student_with_lowest_grade(economics_grades)
+    'kristalina georgieva'
+    '''
+    lowest = 999
+    lowest_index = None # lowest_key, for dictionaries the "index" is always called the "key"
+    for k in d:
+        if d[k] < lowest:
+            lowest = d[k]
+            lowest_index = k
+    return lowest_index
