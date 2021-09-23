@@ -90,3 +90,52 @@ def filter_odd(xs):
         # append to the accumulator if our condition is satisfied
     return accumulator 
     # always avoid actually removing something
+
+math_grades={
+        'donald knuth':85,
+        'hypatia':75,
+        'emmy noether':86,
+        'leonhard euler':92,
+        'grigori perelman':95,
+        'alexander grothendieck':95,
+        'shelton cooper':72,
+        'ada lovelace':96,
+        }
+
+english_grades={
+        'emily dickenson':92,
+        'edgar allan poe':88,
+        'william shakespeare':84,
+        'robert frost':83,
+        'dorthy day':95,
+        'douglas adams':42,
+        'maya angelou':89,
+        'emma goldman':85,
+        }
+
+economics_grades={
+        'christine lagarde':85,
+        'alan greenspan':92,
+        'adam smith':88,
+        'kristalina georgieva':79,
+        'karl marx':90,
+        'pierre-joseph proudhon':95,
+        }
+
+def lowest_grade(d):
+    '''
+    Return the largest value.
+    >>> lowest_grade(math_grades)
+    72
+    >>> lowest_grade(english_grades)
+    42
+    >>> lowest_grade(economics_grades)
+    79
+    '''
+    lowest = 999
+    for k in d:
+        # k is the key
+        # get the value with d[k]
+        if d[k] < lowest:
+            lowest = d[k]
+    return lowest
